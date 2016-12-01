@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48"
+                id="APRWSAppModule_AprRoadconditionViewResources"
+                Package="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.rest.v0" usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="AprRoadconditionView1" RangeSize="5" DataControl="APRWSAppModuleDataControl"
+              id="AprRoadconditionView1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="AprRoadconditionView1Iter" id="AprRoadcondition" AccessorFolder="Always">
+      <nodeDefinition DefName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.vo.AprRoadconditionView"
+                     Name="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.vo.AprRoadconditionView"/>
+    </tree>
+     <methodAction id="saveRoadConditionWS" RequiresUpdateModel="true" Action="invokeMethod" MethodName="saveRoadConditionWS"
+                      IsViewObjectMethod="true" DataControl="APRWSAppModuleDataControl"
+                      InstanceName="data.APRWSAppModuleDataControl.AprRoadconditionView1"
+                      ReturnName="data.APRWSAppModuleDataControl.methodResults.saveRoadConditionWS_APRWSAppModuleDataControl_AprRoadconditionView1_saveRoadConditionWS_result"
+                      IterBinding="AprRoadconditionView1Iter">
+            <NamedData NDName="localId" NDType="int"/>
+            <NamedData NDName="appCode" NDType="java.lang.String"/>
+             <NamedData NDName="roadCondition" NDType="int"/>
+             <NamedData NDName="username" NDType="java.lang.String"/>
+              <NamedData NDName="timestamp" NDType="java.lang.String"/>
+          <NamedData NDName="image" NDType="java.lang.String"/>
+             <NamedData NDName="voice" NDType="java.lang.String"/>
+             <NamedData NDName="comment" NDType="java.lang.String"/>
+              <NamedData NDName="gpsLong" NDType="double"/>
+               <NamedData NDName="gpsLat" NDType="double"/>
+
+
+
+
+        </methodAction>
+  </bindings>
+</pageDefinition>
+
+

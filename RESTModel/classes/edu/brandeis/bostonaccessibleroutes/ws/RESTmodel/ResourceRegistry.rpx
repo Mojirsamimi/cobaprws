@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.16.48" id="ResourceRegistry"
+             SeparateXMLFiles="false" Package="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel" ClientType="Generic">
+  <pageMap>
+    <page path="v0_AprRoadcondition" usageId="v0_APRWSAppModule_AprRoadconditionViewResources"/>
+  </pageMap>
+  <dataControlUsages>
+    <BC4JDataControl id="APRWSAppModuleDataControl" Package="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="APRWSAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+  <pageDefinitionUsages>
+    <page id="v0_APRWSAppModule_AprRoadconditionViewResources"
+          path="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.rest.v0.APRWSAppModule_AprRoadconditionViewResources"/>
+  </pageDefinitionUsages>
+</Application>

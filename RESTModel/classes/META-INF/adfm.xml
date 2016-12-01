@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<MetadataDirectory xmlns="http://xmlns.oracle.com/adfm/metainf" version="11.1.1.0.0">
+   <BusinessComponentProjectRegistry path="edu/brandeis/bostonaccessibleroutes/ws/RESTmodel/RESTModel.jpx"/>
+   <BusinessComponentServiceRegistry path="edu/brandeis/bostonaccessibleroutes/ws/RESTmodel/eo/common/bc4j.xcfg"/>
+   <DataBindingRegistry path="edu/brandeis/bostonaccessibleroutes/ws/RESTmodel/ResourceRegistry.rpx"/>
+</MetadataDirectory>

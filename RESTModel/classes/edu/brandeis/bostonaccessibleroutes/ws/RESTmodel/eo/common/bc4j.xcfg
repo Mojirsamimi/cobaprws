@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1256" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule">
+    <AppModuleConfig name="APRWSAppModuleLocal" jbo.project="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.RESTModel"
+                     ApplicationName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/APRWSDBCONNDS"/>
+      <Security AppModuleJndiName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="APRWSAppModuleShared"
+                     jbo.project="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.RESTModel"
+                     ApplicationName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/APRWSDBCONNDS"/>
+      <Security AppModuleJndiName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

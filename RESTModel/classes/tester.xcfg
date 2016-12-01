@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule">
+      <AppModuleConfig name="158B98171A8" DBconnection="java:comp/env/jdbc/APRWSDBCONNDS" ApplicationName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule" DeployPlatform="LOCAL" IsLazyLoadingTrue="true" JDBCName="APRWSDBCONN" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="APRWSAppModuleLocal" jbo.project="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.RESTModel">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle" JDBCDataSource="java:comp/env/jdbc/APRWSDBCONNDS"/>
+         <Security AppModuleJndiName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.APRWSAppModule"/>
+         <Tester FullProxyInterfaceName="edu.brandeis.bostonaccessibleroutes.ws.RESTmodel.eo.common.APRWSAppModule"/>
+         <Custom ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
